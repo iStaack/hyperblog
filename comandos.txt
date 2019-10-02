@@ -1,0 +1,8 @@
+git add --all / git add .
+git commit -am "Mensaje"
+git log nombre_archivo.extension/nombre_carpeta
+git show
+git reset numero_commit 
+git checkout nombre_branch/numero_commit
+git diff (Esto muestra los cambios untracked)
+git reset --hard/--soft numero_commit

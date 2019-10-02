@@ -1,9 +1,5 @@
-Me gustan las mujeres.
-Voy a ser un programador.
-Usando Visual Studio Code.
+Esta es la historia de Freddy Vega.
 
-En camara Freddy parece alto, 
-pero no lo es.
+Freddy Vega tiene 32 años y nació en Colombia.
 
-Hoy hablaremos de su vida y 
-obra maestra.
+Mañana nos enfocaremos en su vida laboral.
