@@ -23,3 +23,30 @@ Interesante:
 git fetch (trae los cambios de un repositorio remoto al local)
 git merge (fusiona los cambios del repositorio local con lo que está en el disco duro)
 git pull = git fetch + git merge
+
+
+LLAVES:
+220 ssh-keygen -t rsa -b 4096 -C "isaac@trtinteractive.com"
+221  eval $(ssh-agent -s)
+222  ~
+223  cd /
+224  pwd
+225  cd ~
+226  cd ~/proyecto1/
+227  cd ~/.ssh/
+228  ls -al
+229  ssh-add ~/.ssh/id_rsa
+
+
+Y en modificado
+eval "$(ssh-agent -s)"
+vim config :
+///
+Host *
+        AddKeysToAgent yes
+        UseKeyChain yes
+        IdentityFile ~/.ssh/id_rsa
+///
+ssh-add -K ~/.ssh/id_rsa
+
+Cambiar url del repo remoto:
