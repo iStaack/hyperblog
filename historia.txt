@@ -5,4 +5,5 @@ Usando Visual Studio Code.
 En camara Freddy parece alto, 
 pero no lo es.
 
-Hoy hablaremos de su vida.
+Hoy hablaremos de su vida y 
+obra maestra.
