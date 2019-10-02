@@ -3,6 +3,7 @@ git commit -m "Mensaje" (Crea un commit con los cambios en staging)
 git commit -am "Mensaje" (Trackea los cambios untracked de archivos previamente commiteados y crea un commit con los cambios en staging)
 git log nombre_archivo.extension/nombre_carpeta (Muestra un perfil de los commit de un archivo, carpeta o rama)
 git log --stat (Muestra datos adicionales de lo modificado)
+git log --all --graph --stat --decorate --oneline (Muestra de manera completa y legible los commit realizados en el repo)
 git show (Muestra todos los cambios realizados en el último commit)
 git reset --hard numero_commit (Resetea a un commit y borra lo que está en el área de stating)
 git reset --soft numero_commit (Resetea a un commit sin borrar los cambios tracked)
@@ -23,8 +24,8 @@ Interesante:
 git fetch (trae los cambios de un repositorio remoto al local)
 git merge (fusiona los cambios del repositorio local con lo que está en el disco duro)
 git pull = git fetch + git merge
-
-
+git tag -a v0.1 -m "Resultado de las primeras clases del curso" 5cdf753 (Agrega un tag de version asociado a un commit)
+git show-ref --tags (Muestra los tags creados)
 LLAVES:
 220 ssh-keygen -t rsa -b 4096 -C "isaac@trtinteractive.com"
 221  eval $(ssh-agent -s)
