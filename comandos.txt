@@ -19,8 +19,15 @@ git config -l (Lista las configuraciones del repositorio en local)
 git config --global propiedad nuevo_valor
 git remote add origin url_repositorio (Agrega un repositorio remoto con su propio historial)
 git remote remove origin url_repositorio
+git remote set-url origin nueva_url_ssh_o_http
+git remote -v (Muestra la url de fetch y la de push)
 git pull origin master (Se trae los cambios hechos en el branch que no estén en local)
 git pull origin master --allow-unrelated-histories (Lo mismo de arriba pero permite fusionar la historia del local con la del remoto)
+git branch (Muestra ramas actuales en local)
+git branch nombre_nueva_rama (Crea una rama nueva)
+git checkout -b nombre_nueva_rama (Crea una rama nueva y se cambia a ella)
+git branch -d nombre_rama (Borra una rama en local)
+git push origin --delete nombre_rama (Borra una rama en local y en el repo remoto)
 
 Interesante:
 git fetch (trae los cambios de un repositorio remoto al local)
@@ -32,6 +39,7 @@ git tag -d nombre_tag (Borra un tag localmente)
 git push origin :refs/tags/nombre_tag_modificado
 git show-ref --tags (Muestra los tags creados)
 git push origin --tags (Pushea los tags)
+
 LLAVES:
 220 ssh-keygen -t rsa -b 4096 -C "isaac@trtinteractive.com"
 221  eval $(ssh-agent -s)
