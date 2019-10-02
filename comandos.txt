@@ -11,9 +11,8 @@ git checkout nombre_branch/numero_commit nombre_archivo_nombre_carpeta
 git diff (Muestra los cambios untracked)
 git rm --cached (Elimina los archivos del área de Staging y del próximo commit pero los mantiene en nuestro disco duro)
 git rm --force (Elimina los archivos de Git y del disco duro.)
-git branch nueva_rama (Crea nueva rama a partir de la actual)
-git checkout otra_rama (Cambia a otra rama)
-git checkout -b nuevaRama (Crea nueva rama a partir de la actual y cambia a ella)
+git merge otro_branch (Es un commit a la rama destino con la que se esta fusionando)
+
 
 Interesante:
 git fetch = (trae los cambios de un repositorio remoto al local)
