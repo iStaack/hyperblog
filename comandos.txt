@@ -12,9 +12,14 @@ git diff (Muestra los cambios untracked)
 git rm --cached (Elimina los archivos del área de Staging y del próximo commit pero los mantiene en nuestro disco duro)
 git rm --force (Elimina los archivos de Git y del disco duro.)
 git merge otro_branch (Es un commit a la rama destino con la que se esta fusionando)
-
+git config -l (Lista las configuraciones del repositorio en local)
+git config --global propiedad nuevo_valor
+git remote add origin url_repositorio (Agrega un repositorio remoto con su propio historial)
+git remote remove origin url_repositorio
+git pull origin master (Se trae los cambios hechos en el branch que no estén en local)
+git pull origin master --allow-unrelated-histories (Lo mismo de arriba pero permite fusionar la historia del local con la del remoto)
 
 Interesante:
-git fetch = (trae los cambios de un repositorio remoto al local)
-git merge = (fusiona los cambios del repositorio local con lo que está en el disco duro)
+git fetch (trae los cambios de un repositorio remoto al local)
+git merge (fusiona los cambios del repositorio local con lo que está en el disco duro)
 git pull = git fetch + git merge
