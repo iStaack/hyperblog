@@ -3,7 +3,10 @@ git commit -m "Mensaje" (Crea un commit con los cambios en staging)
 git commit -am "Mensaje" (Trackea los cambios untracked de archivos previamente commiteados y crea un commit con los cambios en staging)
 git log nombre_archivo.extension/nombre_carpeta (Muestra un perfil de los commit de un archivo, carpeta o rama)
 git log --stat (Muestra datos adicionales de lo modificado)
+git log --all --graph --stat --decorate --oneline (Muestra de manera completa y legible los commit realizados en el repo)
 git show (Muestra todos los cambios realizados en el último commit)
+git show-branch (Muestra los commit hechos en el branch muy resumido sin los numeros)
+git show-branch --all (Muestra un poco mas de datos de los commits del branch)
 git reset --hard numero_commit (Resetea a un commit y borra lo que está en el área de stating)
 git reset --soft numero_commit (Resetea a un commit sin borrar los cambios tracked)
 git reset HEAD (Saca todos los cambios en el área de staging)
@@ -12,9 +15,45 @@ git diff (Muestra los cambios untracked)
 git rm --cached (Elimina los archivos del área de Staging y del próximo commit pero los mantiene en nuestro disco duro)
 git rm --force (Elimina los archivos de Git y del disco duro.)
 git merge otro_branch (Es un commit a la rama destino con la que se esta fusionando)
-
+git config -l (Lista las configuraciones del repositorio en local)
+git config --global propiedad nuevo_valor
+git remote add origin url_repositorio (Agrega un repositorio remoto con su propio historial)
+git remote remove origin url_repositorio
+git pull origin master (Se trae los cambios hechos en el branch que no estén en local)
+git pull origin master --allow-unrelated-histories (Lo mismo de arriba pero permite fusionar la historia del local con la del remoto)
 
 Interesante:
-git fetch = (trae los cambios de un repositorio remoto al local)
-git merge = (fusiona los cambios del repositorio local con lo que está en el disco duro)
+git fetch (trae los cambios de un repositorio remoto al local)
+git merge (fusiona los cambios del repositorio local con lo que está en el disco duro)
 git pull = git fetch + git merge
+git push nombre_repo_remoto nombre_branch (Sube al repositorio remoto el branch local con todo su historial, creándolo o en su defecto sobreescribiéndolo)
+git tag -a v0.1 -m "Resultado de las primeras clases del curso" 5cdf753 (Agrega un tag de version asociado a un commit)
+git tag -d nombre_tag (Borra un tag localmente)
+git push origin :refs/tags/nombre_tag_modificado
+git show-ref --tags (Muestra los tags creados)
+git push origin --tags (Pushea los tags)
+LLAVES:
+220 ssh-keygen -t rsa -b 4096 -C "isaac@trtinteractive.com"
+221  eval $(ssh-agent -s)
+222  ~
+223  cd /
+224  pwd
+225  cd ~
+226  cd ~/proyecto1/
+227  cd ~/.ssh/
+228  ls -al
+229  ssh-add ~/.ssh/id_rsa
+
+
+Y en modificado
+eval "$(ssh-agent -s)"
+vim config :
+///
+Host *
+        AddKeysToAgent yes
+        UseKeyChain yes
+        IdentityFile ~/.ssh/id_rsa
+///
+ssh-add -K ~/.ssh/id_rsa
+
+Cambiar url del repo remoto:
