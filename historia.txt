@@ -3,4 +3,6 @@ Voy a ser un programador.
 Usando Visual Studio Code.
 
 En camara Freddy parece alto, 
-pero no lo es
+pero no lo es.
+
+Hoy hablaremos de su vida.
