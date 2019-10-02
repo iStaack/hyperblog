@@ -1,12 +1,20 @@
 git add --all / git add .
-git commit -am "Mensaje"
+git commit -m "Mensaje" (Crea un commit con los cambios en staging)
+git commit -am "Mensaje" (Trackea los cambios untracked de archivos previamente commiteados y crea un commit con los cambios en staging)
 git log nombre_archivo.extension/nombre_carpeta (Muestra un perfil de los commit de un archivo, carpeta o rama)
 git log --stat (Muestra datos adicionales de lo modificado)
 git show (Muestra todos los cambios realizados en el último commit)
 git reset --hard numero_commit (Resetea a un commit y borra lo que está en el área de stating)
 git reset --soft numero_commit (Resetea a un commit sin borrar los cambios tracked)
 git reset HEAD (Saca todos los cambios en el área de staging)
-git checkout nombre_branch/numero_commit
+git checkout nombre_branch/numero_commit nombre_archivo_nombre_carpeta
 git diff (Muestra los cambios untracked)
 git rm --cached (Elimina los archivos del área de Staging y del próximo commit pero los mantiene en nuestro disco duro)
 git rm --force (Elimina los archivos de Git y del disco duro.)
+
+
+
+Interesante:
+git fetch = (trae los cambios de un repositorio remoto al local)
+git merge = (fusiona los cambios del repositorio local con lo que está en el disco duro)
+git pull = git fetch + git merge
