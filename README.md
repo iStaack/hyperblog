@@ -1,5 +1,5 @@
 # hyperblog
-Un blog increíble para el curso de Git y Github de Platzi
+Un blog increíble para el curso de **Git** y **Github** de Platzi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg3NDAwMjQwXX0=
+eyJoaXN0b3J5IjpbLTU4MDgzNzI2NCw0ODc0MDAyNDBdfQ==
 -->
