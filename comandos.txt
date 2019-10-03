@@ -65,4 +65,8 @@ Host *
 ///
 ssh-add -K ~/.ssh/id_rsa
 
-Cambiar url del repo remoto:
+Para trabajar en un fork:
+- Darle fork en github al repo público.
+- Clonar el repo público
+- Agregar el nuevo origen remoto que haga referencia al repo original (se puede hacer pull de ese pero
+no push a menos que sea contribuyente) con lo siguiente: git remote add upstream <url_repo_original>)
