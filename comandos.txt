@@ -4,6 +4,7 @@ git commit -am "Mensaje" (Trackea los cambios untracked de archivos previamente 
 git log nombre_archivo.extension/nombre_carpeta (Muestra un perfil de los commit de un archivo, carpeta o rama)
 git log --stat (Muestra datos adicionales de lo modificado)
 git log --all --graph --stat --decorate --oneline (Muestra de manera completa y legible los commit realizados en el repo)
+alias arbolito="git log --all --graph --stat --decorate --oneline"
 git show (Muestra todos los cambios realizados en el último commit)
 git show-branch (Muestra los commit hechos en el branch muy resumido sin los numeros)
 git show-branch --all (Muestra un poco mas de datos de los commits del branch)
