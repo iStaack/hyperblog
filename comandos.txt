@@ -48,6 +48,7 @@ git stash drop (Borra lo guardado en el stash)
 git clean (Puede borrar las cosas indexadas (no ingoradas))
 git clean --dry-run (Quita "en seco" los cambios actuales sin borrarlos)
 git clean -f (Borra los archivos quitados en seco EXCEPTO lo ignorado en el .gitignore)
+git cherry-pick <numero_commit a traer>
 
 git clean -f
 LLAVES:
