@@ -25,6 +25,8 @@ git remote -v (Muestra la url de fetch y la de push)
 git pull origin master (Se trae los cambios hechos en el branch que no estén en local)
 git pull origin master --allow-unrelated-histories (Lo mismo de arriba pero permite fusionar la historia del local con la del remoto)
 git branch (Muestra ramas actuales en local)
+git branch -r (Muestra ramas actuales remotas)
+git branch -a (Muestra todas las ramas)
 git branch nombre_nueva_rama (Crea una rama nueva)
 git checkout -b nombre_nueva_rama (Crea una rama nueva y se cambia a ella)
 git branch -d nombre_rama (Borra una rama en local)
@@ -51,8 +53,22 @@ git clean -f (Borra los archivos quitados en seco EXCEPTO lo ignorado en el .git
 git cherry-pick <numero_commit a traer>
 git commit --amend (Después de agregar los nuevos cambios, remienda el commit anterior (agarra esos cambios, le agrega los nuevos y elimina ese commit anterior para crear uno nuevo) y se le puede cambiar el mensaje)
 git reflog (Muestra todos los movimientos)
+git grep palabra (Lista las líneas completas en las que aparece una palabra en cuáles archivos)
+git grep -c palabra (Muesta la cantidad de veces que se repite una palabra en cuáles archivos)
+git grep -n palabra (Lista las líneas completas en las que aparece una palabra en cuáles archivos con la línea)
+git log -S "palabra" (Lista los commits que incluyen la palabra)
+git shortlog (Muestra los commits y los comentarios hechos por persona)
+git shortlog -sn (Muestra el número de commits hechos por persona)
+git shortlog -sn --all (Muestra el número de commits hechos por persona (incluso los borrados))
+git shortlog -sn --all --no-merges (Muestra el número de commits hechos por persona (incluso los borrados) sin contar merges)
+git config --global alias.stats "shortlog -sn --all -
+-no-merges" (Creo un alias para el comando anterior llamado "stats")
+git blame <archivo> (Muestra quién hizo qué línea)
+git blame -c <archivo> (Lo de arriba pero bien identado)
+git blame -c <archivo> -L<numero_linea_inicio>,<numero_linea_fin> (Muestra los datos de las lineas de un archivo de una linea a otra (formateado con -c))
+<comando git> --help (Abre en el navegador el manual del comando)
 
-git clean -f
+
 LLAVES:
 220 ssh-keygen -t rsa -b 4096 -C "isaac@trtinteractive.com"
 221  eval $(ssh-agent -s)
