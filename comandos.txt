@@ -40,7 +40,16 @@ git tag -d nombre_tag (Borra un tag localmente)
 git push origin :refs/tags/nombre_tag_modificado
 git show-ref --tags (Muestra los tags creados)
 git push origin --tags (Pushea los tags)
+git stash (Guarda en un lugar temporal los cambios sin agregar para poder hacer checkout a otra rama)
+git stash list (Muestra lo guardado en el stash)
+git stash pop (Suelta los cambios que están en el stash en la rama actual)
+git stash branch nueva_rama (Suelta los cambios guardados en el stash en una rama nueva)
+git stash drop (Borra lo guardado en el stash)
+git clean (Puede borrar las cosas indexadas (no ingoradas))
+git clean --dry-run (Quita "en seco" los cambios actuales sin borrarlos)
+git clean -f (Borra los archivos quitados en seco EXCEPTO lo ignorado en el .gitignore)
 
+git clean -f
 LLAVES:
 220 ssh-keygen -t rsa -b 4096 -C "isaac@trtinteractive.com"
 221  eval $(ssh-agent -s)
