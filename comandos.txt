@@ -8,8 +8,8 @@ alias arbolito="git log --all --graph --stat --decorate --oneline"
 git show (Muestra todos los cambios realizados en el último commit)
 git show-branch (Muestra los commit hechos en el branch muy resumido sin los numeros)
 git show-branch --all (Muestra un poco mas de datos de los commits del branch)
-git reset --hard numero_commit (Resetea a un commit y borra lo que está en el área de stating)
-git reset --soft numero_commit (Resetea a un commit sin borrar los cambios tracked)
+git reset --hard <numero_commit> (Resetea a un commit y borra lo que está en el área de stating, y si no se pone por defecto es soft)
+git reset --soft <numero_commit/head> (Resetea a un commit sin borrar los cambios en staging)
 git reset HEAD (Saca todos los cambios en el área de staging)
 git checkout nombre_branch/numero_commit nombre_archivo_nombre_carpeta
 git diff (Muestra los cambios untracked)
@@ -49,6 +49,8 @@ git clean (Puede borrar las cosas indexadas (no ingoradas))
 git clean --dry-run (Quita "en seco" los cambios actuales sin borrarlos)
 git clean -f (Borra los archivos quitados en seco EXCEPTO lo ignorado en el .gitignore)
 git cherry-pick <numero_commit a traer>
+git commit --amend (Después de agregar los nuevos cambios, remienda el commit anterior (agarra esos cambios, le agrega los nuevos y elimina ese commit anterior para crear uno nuevo) y se le puede cambiar el mensaje)
+git reflog (Muestra todos los movimientos)
 
 git clean -f
 LLAVES:
